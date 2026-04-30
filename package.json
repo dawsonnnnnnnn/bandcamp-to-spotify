@@ -12,6 +12,7 @@
     "start": "node dist/index.js"
   },
   "devDependencies": {
+    "@types/express": "^5.0.6",
     "@types/node": "^20.0.0",
     "ts-node": "^10.9.0",
     "typescript": "^5.0.0"
@@ -19,6 +20,8 @@
   "dependencies": {
     "axios": "^1.15.2",
     "cheerio": "^1.2.0",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "open": "^11.0.0"
   }
 }
