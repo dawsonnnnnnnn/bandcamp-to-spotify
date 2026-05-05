@@ -1,2 +1,56 @@
-# bandcamp-to-spotify
-This app scrapes title, artist, and album information from any given Bandcamp page (especially its curated content like "Best of Experimental Music on Bandcamp: March 2029" in which songs are curated from a variety of artists) and creates a Spotify playlist with those songs.  
+# Bandcamp to Spotify
+
+Scrapes album listings from Bandcamp Daily curated pages (e.g. "Best Experimental Music on Bandcamp: January 2026") and outputs Spotify track links for each album found.
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org) (v18 or higher)
+- A [Spotify Developer account](https://developer.spotify.com)
+
+## Spotify Setup
+
+Before running the app, you need to create a Spotify Developer app:
+
+1. Log in to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
+2. Create a new app
+3. Under **APIs used**, check **Web API**
+4. Add `http://127.0.0.1:8888/callback` as a **Redirect URI** and save
+5. Go to **User Management** and add your Spotify account email
+6. Copy your **Client ID** and **Client Secret**
+
+## Installation
+
+```
+git clone https://github.com/dawsonnnnnnnn/bandcamp-to-spotify
+cd bandcamp-to-spotify
+npm install
+```
+
+## Configuration
+
+Copy the example environment file and fill in your Spotify credentials:
+
+```
+cp .env.example .env
+```
+
+Open `.env` and add your values:
+
+```
+SPOTIFY_CLIENT_ID=your_client_id_here
+SPOTIFY_CLIENT_SECRET=your_client_secret_here
+```
+
+## Usage
+
+```
+npm run scrape
+```
+
+A browser window will open to the Spotify login page. After you approve access, the terminal will print Spotify track links for each album found on the Bandcamp page.
+
+## Notes
+
+- The Bandcamp URL to scrape is currently hardcoded in `src/index.ts`. A future version may accept it as a command-line argument.
+- Some albums may not be found on Spotify, particularly obscure or experimental releases.
+- Playlist creation requires Spotify to approve your developer app for extended API access.
