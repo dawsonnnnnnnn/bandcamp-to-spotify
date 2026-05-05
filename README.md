@@ -1,6 +1,6 @@
 # Bandcamp to Spotify
 
-Scrapes album listings from Bandcamp Daily curated pages (e.g. "Best Experimental Music on Bandcamp: January 2026") and outputs Spotify track links for each album found.
+Scrapes album listings from Bandcamp Daily curated pages (e.g. ["Best Experimental Music on Bandcamp: April 2026")](https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-april-2026) and outputs Spotify track links for each album found.
 
 ## Prerequisites
 
