@@ -2,6 +2,9 @@
 
 Scrapes album listings from Bandcamp Daily curated pages (e.g. ["Best Experimental Music on Bandcamp: April 2026")](https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-april-2026) and outputs Spotify track links for each album found.
 
+## Don't @ me, bro
+- I didn't configure this app to write to Spotify because I especially love Spotify. Apple Music's developer tools are just not as friendly. Maybe in a future iteration of this tool...
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org) (v18 or higher)
@@ -9,7 +12,7 @@ Scrapes album listings from Bandcamp Daily curated pages (e.g. ["Best Experiment
 
 ## Spotify Setup
 
-Before running the app, you need to create a Spotify Developer app:
+Before running the app, create a Spotify Developer app:
 
 1. Log in to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
 2. Create a new app
