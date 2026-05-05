@@ -7,9 +7,9 @@ Scrapes album listings from Bandcamp Daily curated pages (e.g. ["Best Experiment
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org) (v18 or higher)
-- A [Spotify Developer account](https://developer.spotify.com)
--   As of this writing, this using a Developer account is a Spotify Premium feature.
+* [Node.js](https://nodejs.org) (v18 or higher)
+* A [Spotify Developer account](https://developer.spotify.com)
+     * As of this writing, this using a Developer account is a Spotify Premium feature.
 
 ## Spotify Setup
 
